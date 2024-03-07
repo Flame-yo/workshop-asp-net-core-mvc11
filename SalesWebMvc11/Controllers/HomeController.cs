@@ -1,5 +1,6 @@
 ﻿using Microsoft.AspNetCore.Mvc;
 using SalesWebMvc11.Models;
+using SalesWebMvc11.Models.ViewModels;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics;
@@ -17,7 +18,8 @@ namespace SalesWebMvc11.Controllers
 
         public IActionResult About()
         {
-            ViewData["Message"] = "Your application description page.";
+            ViewData["Message"] = "Asp Net Core Mvc Course";
+            ViewData["Professor"] = "Nelio Alves";
 
             return View();
         }
